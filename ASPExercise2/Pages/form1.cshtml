@@ -1,0 +1,37 @@
+﻿@page
+@model ASPExercise2.Pages.form1Model
+@{
+    ViewData["Title"] = "Registration";
+}
+<body style="background-color:white;">
+    <div asp-validation-summary="All" style="color:red;font-style:italic"></div>
+    <center>
+        <div class="container" style="background-color:powderblue; margin-left:50px; margin-right: 50px;">
+            <center><h1>Contact Form</h1></center>
+            <form method="post">
+                <input asp-for="Users.firstname" style="border-style:solid; border-color:black; margin-top:50px;" placeholder="Firstname" />
+                <br />
+                <br />
+                <input asp-for="Users.middlename" style="border-style:solid; border-color:black;" placeholder="Middlename" />
+                <br />
+                <br />
+                <input asp-for="Users.lastname" style="border-style:solid; border-color:black;" placeholder="Lastname" />
+                <br />
+                <br />
+                <input asp-for="Users.age"  style="border-style:solid; border-color:black;" placeholder="Age" />
+                <br />
+                <br />
+                <input asp-for="Users.address" style="border-style:solid; border-color:black;" placeholder="Address" />
+                <br />
+                <br />
+                <input asp-for="Users.contactnumber" style="border-style:solid; border-color:black;" placeholder="Contact Number" />
+                <br />
+                <br />
+                <input asp-for="Users.emailaddress" style="border-style:solid; border-color:black;" placeholder="Email Address" />
+                <br />
+                <br />
+                <button type="submit" style="border-style: solid; border-color: black; margin-left: 20px; margin-bottom: 50px; border-style: solid; border-color: black;">Submit</button>
+            </form>
+        </div>
+    </center>
+</body>
