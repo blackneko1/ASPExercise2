@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Registration";
 }
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
 <body style="background-color:white;">
     <div asp-validation-summary="All" style="color:red;font-style:italic"></div>
     <center>
@@ -18,7 +20,7 @@
                 <input asp-for="Users.lastname" style="border-style:solid; border-color:black;" placeholder="Lastname" />
                 <br />
                 <br />
-                <input asp-for="Users.age"  style="border-style:solid; border-color:black;" placeholder="Age" />
+                <input asp-for="Users.age" style="border-style:solid; border-color:black;" placeholder="Age" />
                 <br />
                 <br />
                 <input asp-for="Users.address" style="border-style:solid; border-color:black;" placeholder="Address" />
